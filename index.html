@@ -7,7 +7,7 @@
   </head>  
   <body>
     <header class="main-header">
-         <div class="container">
+         <div class="container clearfix">
             <nav class="main-navigation">
               <a class="index-logo">
                   <img src="img/sedona-logo.png" width="138" height="70" alt="Седона">
@@ -30,7 +30,7 @@
          </div>
      </header>
       
-     <main class="container">
+     <main class="container clearfix">
          <section class="main-banner">
               <figure class="photo-content">
                 <img src="img/background-photo-sedona.jpg" width="1200" height="509" alt="Фото">
@@ -42,96 +42,97 @@
              <span class="lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</span>
              <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
          </section>
-         <div class="main-reasons">
-            <section class="reasons reason-light">
+         <div class="main-reasons clearfix">
+            <section class="reasons reason-one">
                 <span class="lead">Настоящий городок</span>
                 <span class="reasons-texts">- №1 -</span>
                 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </section>
-             <figure class="photo-content">
+             <figure class="photo-content-one">
                 <img src="img/the-real-city.jpg" width="800" height="256" alt="Фото">
              </figure>
          </div>
-         <div class="main-advices">
-            <section class="reasons">
+         <div class="main-advices clearfix">
+            <section class="advice-item">
                 <img src="img/icon-house.png" width="75" height="72" alt="Жилье">
                 <span class="lead">Жилье</span>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </section>
-             <section class="reasons">
+             <section class="advice-item">
                 <img src="img/icon-food.png" width="74" height="70" alt="Еда">
                  <span class="lead">Еда</span>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </section>
-             <section class="reasons">
+             <section class="advice-item">
                 <img src="img/icon-gift.png" width="64" height="76" alt="Сувениры">
                  <span class="lead">Сувениры</span>
                 <p>Сувениры не только китайского, но и местного производства!</p>
             </section>
          </div>
-         <div class="main-reasons">
-            <figure class="photo-content">
+         <div class="main-reasons clearfix">
+            <figure class="photo-content-two">
                 <img src="img/devils-bridge.jpg" width="800" height="256" alt="Фото">
              </figure>
-            <section class="reasons reason-light">
+            <section class="reasons reason-two">
                 <span class="lead">Там есть мост дьявола</span>
                 <span class="reasons-texts">- №2 -</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </section>
          </div>
-         <div class="main-reasons group">
-            <section class="reasons">
+         <div class="main-reasons group clearfix">
+            <section class="reasons reason-item">
                 <span class="lead">Небольшая площадь</span>
                 <span class="reasons-texts">- №3 -</span>
                 <p>Все достопримечательности находятся очень близко</p>
             </section>
-             <section class="reasons">
+             <section class="reasons reason-item">
                  <span class="lead">Красивая дорога</span>
                 <span class="reasons-texts">- №4 -</span>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </section>
-             <section class="reasons">
+             <section class="reasons reason-item">
                  <span class="lead">Мало туристов</span>
                 <span class="reasons-texts">- №5 -</span>
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
             </section>
          </div>
-         <section class="main-searching-hotels">
+         <section class="main-searching-hotels clearfix">
              <span class="question">Заинтересовались?</span>
              <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
              <a class="btn-form-searching" href="#">Поиск гостиницы в Седоне</a>
-             <div class="form-searching-hotels">
-                 <form action="#" method="get">
-                    <p>Дата заезда: <input type="date" name="calendar">
-                        <input type="submit" value="Отправить"></p>
-                    <img src="img/Calendar.png" width="21" height="22" alt="Календарь">
-                    <p>Дата выезда: <input type="date" name="calendar">
-                        <input type="submit" value="Отправить"></p>
-                    <img src="img/Calendar.png" width="21" height="22" alt="Календарь"> 
-                    <div class="counts">
-                        <div class="count-adults">
-                            <img src="img/Minus.png" width="12" height="3" alt="Минус">
-                            Взрослые:
-                            <img src="img/Plus.png" width="11" height="11" alt="Плюс">
-                        </div>   
-                        <div class="count-children">
-                            <img src="img/Minus.png" width="12" height="3" alt="Минус">
-                            Дети:
-                            <img src="img/Plus.png" width="11" height="11" alt="Плюс">
-                        </div>
-                    </div>
-                 <a class="btn-searching-hotels" href="#">Найти</a>
-             </div>
-                 </form>
-         </section>         
-         <div class="google-map">
+         </section> 
+             
+         <div class="form-searching-hotels clearfix">
+              <form action="#" method="get">
+                  <p>Дата заезда: <input type="date" name="calendar">
+                      <input type="submit" value="Отправить"></p>
+                  <img src="img/Calendar.png" width="21" height="22" alt="Календарь">
+                  <p>Дата выезда: <input type="date" name="calendar">
+                      <input type="submit" value="Отправить"></p>
+                  <img src="img/Calendar.png" width="21" height="22" alt="Календарь"> 
+                  <div class="counts">
+                      <div class="count-adults">
+                          <img src="img/Minus.png" width="12" height="3" alt="Минус">
+                          Взрослые:
+                          <img src="img/Plus.png" width="11" height="11" alt="Плюс">
+                     </div>   
+                     <div class="count-children">
+                         <img src="img/Minus.png" width="12" height="3" alt="Минус">
+                         Дети:
+                         <img src="img/Plus.png" width="11" height="11" alt="Плюс">
+                      </div>
+                  </div>
+                  <a class="btn-searching-hotels" href="#">Найти</a>
+               </form>
+          </div>     
+         <div class="google-map clearfix">
              <img src="img/map.jpg" width="1200" height="593" alt="Карта">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505974255!2d-111.83015798499453!3d34.85437338103579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1485111401292" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
          </div>                 
       </main>    
       
-      <footer class="main-footer">
-          <div class="container">
+      <footer class="main-footer clearfix">
+          <div class="container clearfix">
             <section class="footer-hash-tag">
               <a href="#">#visitsedona</a>
             </section>
