@@ -17,6 +17,18 @@ body{
     clear: both;
 }
 
+figure{
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+fieldset{
+    margin: 0;   
+}
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -28,8 +40,6 @@ body{
     background-color: aliceblue;
 }
 
-/*Прикрепила normalize, но элементы выпадают из контейнеров все-таки. Меню прекратило выпадать в Хроме только когда зафлоатила лого и список. Главный баннер продолжает вываливаться и отталкиваться сверху даже если обнулить маргины (ощущение, что картинкам как будто заданы какие-то отступы по умолчанию) */
-
 .main-menu{
     float: left;
     width: 1056px;
@@ -40,10 +50,12 @@ body{
     margin-right: 460px;
 }
 
+
+/*стили для главной*/
+
 .main-banner{
     width: 1200px;
-    margin: 0;
-    background-color:aqua;
+    background-color: aqua;
 }
 
 .main-preview{
@@ -66,6 +78,7 @@ body{
 .reason-one{
     float: left;
     width: 286px;
+    margin-left: 72px;
     padding-top: 54px;
     padding-bottom: 54px;
     background-color: green;
@@ -100,20 +113,19 @@ body{
   margin-right: 0;
 }
 
-.main-reasons .photo-content-two{
+.photo-content-two{
     float: left;
     width: 800px;
 }
 
-.main-reasons .reason-two{
+ .reason-two{
     float: right;
     width: 310px;
+    margin-right: 72px;
     padding-top: 55px;
     padding-bottom: 54px;
     background-color: green; 
 }
-
-
 
 .group{
     padding: 0 6%;
@@ -121,14 +133,6 @@ body{
 }
 
 .reason-item{
-    float: left;
-    width: 325px;
-    margin-right: 25px;
-    padding-top: 52px;
-    padding-bottom: 80px;
-    background-color:blue;
-    
-    
     float: left;
     width: 330px;
     margin-right: 30px;
@@ -160,6 +164,108 @@ body{
 .google-map{
     width: 1200px; 
 }
+/*стили для главной*/
+
+
+/*стили для hotels*/
+.filter-background-photo{
+    width: 1200px;
+    margin: 0;
+    background-color:aqua;
+}
+
+.filters{
+    margin: 0 6%;
+    background-color:fuchsia;
+}
+
+.filter-type-one{
+    display: inline-block;
+    width: 190px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    }
+
+.filter-type-two{
+    display: inline-block;
+    width: 190px; 
+    margin-left: 50px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.filter-type-three{
+    display: inline-block;
+    width: 330px;  
+    margin-left: 215px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.sorting{
+    margin: 0 6%;
+    background-color:darkgray;  
+}
+
+.sorting-result{
+    display: inline-block;
+    width: 128px;
+    padding-top: 29px;
+    padding-bottom: 32px;
+    background-color: firebrick;
+}
+
+.sorting-texts{
+    display: inline-block;
+    width: 372px;
+    margin-left: 28px;
+    padding-top: 36px;
+    padding-bottom: 32px;
+    background-color: firebrick;
+}
+
+.icons-up-down{
+    display: inline-block;
+    width: 38px;
+    margin-left: 480px; 
+    padding-top: 29px; /*почему-то не реагирует на padding*/
+    padding-bottom: 32px; 
+    background-color: firebrick;
+}
+
+.hotels-list{
+    margin: 0 6%;
+    background-color: aquamarine;
+}
+
+.photo-content{
+    float: left;
+    width: 135px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: aliceblue;
+}
+
+.hotel-info{
+    float: left;
+    width: 300px;
+    margin-left: 25px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: aliceblue;
+}
+
+.rating{
+    float: right;
+    width: 240px;
+    margin-left: 350px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: aliceblue;
+}
+/*стили для hotels*/
+
+
 
 .main-footer .container{
     width: 1200px;
@@ -192,15 +298,9 @@ body{
 
 
 
-
-
-
-
-
-
 /*Стили текста*/
 
-h2{
+.sorting-result, h2{
     font-size:21px;
     line-height:26px;
     color:black;
