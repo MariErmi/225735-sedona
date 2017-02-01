@@ -1,11 +1,14 @@
 html,
 body{
-    min-width: 1280px;
-    min-height: 2762;
     margin: 0;
     padding: 0;
-    background-color:bisque;
-}
+    font-size:14px;
+    line-height:26px;
+    color:#333333;
+    font-weight:normal;
+    font-family: "PT Sans", "Arial", serif;
+    text-transform: uppercase;
+   }
 
 .clearfix::after{
     content: "";
@@ -14,173 +17,203 @@ body{
     clear: both;
 }
 
-.main-header{
-    background-color: aquamarine;  
-}
-
 .container{
     width: 1200px;
     margin: 0 auto;
     background-color: darkslateblue;
 }
 
-
-/*с учетом отступов padding 6% справа и слева (как в спецификации) контент не помещается в блоках. Как его впихнуть? если измерять макет, там не предусмотрены такие отступы: ширина фотографий например больше чем надо*/
-
 .main-navigation{
-    width: 1056px;
-    min-height: 56px;
-    margin: 0 auto;
-    padding: 0 72px;
+    padding: 0 6%;
     background-color: aliceblue;
 }
 
-/*как сделать, чтобы элементы шли "впритирку" друг к другу, без отступов?*/
+/*Прикрепила normalize, но элементы выпадают из контейнеров все-таки. Меню прекратило выпадать в Хроме только когда зафлоатила лого и список. Главный баннер продолжает вываливаться и отталкиваться сверху даже если обнулить маргины (ощущение, что картинкам как будто заданы какие-то отступы по умолчанию) */
+
+.main-menu{
+    float: left;
+    width: 1056px;
+}
+
+.index-logo{
+    float: right;
+    margin-right: 460px;
+}
 
 .main-banner{
-    width: 1056px;
-    min-height: 509;
-    margin: 0 auto;
-    padding: 0 72px;
-    background-color: darkolivegreen;
+    width: 1200px;
+    margin: 0;
+    background-color:aqua;
 }
 
-/*почему элементы класса main-banner вылезают за пределы контейнера, хотя должны встать по центру? и как их наложить друг на друга?*/
-
+.main-preview{
+    padding: 0 6%; 
+    background-color: bisque;
+}
 
 .main-preview-text{
-    width: 1056px; 
-    min-height: 217px;
+    width: 494px; 
     margin: 0 auto;
-    padding: 0 72px;
-    background-color: white;
+    padding-top: 58px;
+    padding-bottom: 54px;
+    background-color: cornflowerblue;
 }
-/*если элемент на строке один, как .main-preview-text, например, ему надо задавать float? */
 
 .main-reasons {
-    width: 1056px; 
-    margin: 0 auto;
-    padding: 0 72px;
-    min-height: 256px;
-    background-color: red;  
+   background-color: red;  
 }
 
-.main-reasons .reason-one{
+.reason-one{
     float: left;
-    width: 256px;
-    height: 256px; 
+    width: 286px;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    background-color: green;
 }
 
-.main-reasons .photo-content-one{
+/* не получается задать нужный маргин тексту, так как картинка начинает выпадать */
+
+.photo-content-one{
     float: right;
     width: 800px;
-    height: 256px;
 }
 
 .main-advices{
-    width: 1056px;
-    margin: 0 auto;
-    padding: 0 72px;
-    margin-bottom: 10 px;
-    background-color: white; 
+    padding: 0 6%;
+    background-color:chartreuse;
 }
 
 .advice-item{
     float: left;
     width: 330px;
-    min-height: 330px;
     margin-right: 30px;
-    background-color:blue;
+    text-align: center;
+    padding-top: 52px;
+    padding-bottom: 80px;
+    background-color: blue; 
+    
 }
+
+/* из-за того, что контент внутри разных размеров, блоки получились неровными по нижнему краю. Как это убрать? */
 
 .advice-item:last-child {
   margin-right: 0;
 }
 
-.main-reasons .reason-two{
-    float: right;
-    width: 256px;
-    height: 256px; 
-}
-
 .main-reasons .photo-content-two{
     float: left;
     width: 800px;
-    height: 256px;
 }
 
+.main-reasons .reason-two{
+    float: right;
+    width: 310px;
+    padding-top: 55px;
+    padding-bottom: 54px;
+    background-color: green; 
+}
+
+
+
 .group{
-    width: 1056px;
-    margin: 0 auto;
-    padding: 0 72px;
-    margin-bottom: 10 px;
+    padding: 0 6%;
     background-color: white; 
 }
 
 .reason-item{
     float: left;
     width: 325px;
-    min-height: 256px;
     margin-right: 25px;
+    padding-top: 52px;
+    padding-bottom: 80px;
     background-color:blue;
+    
+    
+    float: left;
+    width: 330px;
+    margin-right: 30px;
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 60px;
+    background-color: blue;
 }
 
-.advice-item:last-child {
+.reason-item:last-child {
     margin-right: 0;
 }
 
 .main-searching-hotels{
-    width: 1056px; 
-    min-height: 292px;
+    width: 574px; 
+    padding-top: 54px;
     margin: 0 auto;
-    padding: 0 72px;
     background-color:darkkhaki;
 }
-/*почему между этими двумя блоками появился отступ? я его не задавала*/
 
 .form-searching-hotels{
     width: 574px; 
-    min-height: 395px;
     margin: 0 auto;
+    padding-top: 54px;
+    padding-bottom: 54px;
     background-color: firebrick;
 }
 
 .google-map{
-    width: 1056px; 
-    min-height: 593px;
-    margin: 0 auto;
-    padding: 0 72px;
+    width: 1200px; 
 }
-/*В макете футер накладывается сверху на карту. Как это сделать?*/
 
-.main-footer {
-    padding-top: 33px;
-    padding-bottom: 33px;
+.main-footer .container{
+    width: 1200px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-right: 6%;
+    padding-left: 6%;
     background-color: darkgrey;
-}
+    } /* здесь почему-то контейнеру не присвоилась ширина 1200 */
 
 .footer-hash-tag {
     float: left;
     width: 240px;
-    margin-right: 88px;
-    margin-left: 73px;
-    min-height: 90px;
     background-color: white;
 }
 
 .footer-social {
     float: left;
     width: 400px;
-    margin-right: 88px;
-    min-height: 90px;
+    margin-left: 88px;
     background-color: white;
 }
 
 .footer-copyright {
     float: right;
     width: 240px;
-    margin-right: 73px;
-    min-height: 90px;
+    margin-left: 88px;
     background-color: white;
 }
 
+
+
+
+
+
+
+
+
+/*Стили текста*/
+
+h2{
+    font-size:21px;
+    line-height:26px;
+    color:black;
+    font-weight:bold;
+    font-family: "PT Sans", "Arial", serif;
+    text-transform: uppercase;
+}
+
+.lead{
+    font-size:21px;
+    line-height:26px;
+    color:black;
+    font-weight:bold;
+    font-family: "PT Sans", "Arial", serif;
+    text-transform: uppercase;
+}

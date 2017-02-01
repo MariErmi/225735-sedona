@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>  
   <body>
     <header class="main-header">
-         <div class="container clearfix">
-            <nav class="main-navigation">
+         <div class="container">
+            <nav class="main-navigation clearfix">
               <a class="index-logo">
                   <img src="img/sedona-logo.png" width="138" height="70" alt="Седона">
               </a>  
-              <ul>
+              <ul class="main-menu">
                   <li>
                       <a href="#">Информация</a>
                   </li>                         
@@ -30,7 +31,7 @@
          </div>
      </header>
       
-     <main class="container clearfix">
+     <main class="container">
          <section class="main-banner">
               <figure class="photo-content">
                 <img src="img/background-photo-sedona.jpg" width="1200" height="509" alt="Фото">
@@ -38,9 +39,11 @@
                 <img src="img/mask-1.png" width="1200" height="57" alt="Because the Grand Canyon sucks!">
               </figure>
          </section>
-         <section class="main-preview-text">
-             <span class="lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</span>
-             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+         <section class="main-preview">
+             <div class="main-preview-text">
+                <span class="lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</span>
+                <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+             </div>
          </section>
          <div class="main-reasons clearfix">
             <section class="reasons reason-one">
@@ -96,13 +99,13 @@
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
             </section>
          </div>
-         <section class="main-searching-hotels clearfix">
+         <section class="main-searching-hotels">
              <span class="question">Заинтересовались?</span>
              <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
              <a class="btn-form-searching" href="#">Поиск гостиницы в Седоне</a>
          </section> 
              
-         <div class="form-searching-hotels clearfix">
+         <div class="form-searching-hotels">
               <form action="#" method="get">
                   <p>Дата заезда: <input type="date" name="calendar">
                       <input type="submit" value="Отправить"></p>
@@ -125,13 +128,13 @@
                   <a class="btn-searching-hotels" href="#">Найти</a>
                </form>
           </div>     
-         <div class="google-map clearfix">
+         <div class="google-map">
              <img src="img/map.jpg" width="1200" height="593" alt="Карта">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505974255!2d-111.83015798499453!3d34.85437338103579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1485111401292" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
          </div>                 
       </main>    
       
-      <footer class="main-footer clearfix">
+      <footer class="main-footer">
           <div class="container clearfix">
             <section class="footer-hash-tag">
               <a href="#">#visitsedona</a>
