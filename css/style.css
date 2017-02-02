@@ -32,12 +32,11 @@ fieldset{
 .container{
     width: 1200px;
     margin: 0 auto;
-    background-color: darkslateblue;
+    background-color: darkgray;
 }
 
 .main-navigation{
     padding: 0 6%;
-    background-color: aliceblue;
 }
 
 .main-menu{
@@ -50,17 +49,39 @@ fieldset{
     margin-right: 460px;
 }
 
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    width: 20%;
+    font-size: 14px;
+    line-height: 26px;
+    vertical-align: top;
+    background-color: aliceblue;
+}
+
+.main-navigation a {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    color: #000000;
+    text-decoration: none;
+}
 
 /*стили для главной*/
 
 .main-banner{
     width: 1200px;
-    background-color: aqua;
 }
 
 .main-preview{
     padding: 0 6%; 
-    background-color: bisque;
 }
 
 .main-preview-text{
@@ -68,11 +89,7 @@ fieldset{
     margin: 0 auto;
     padding-top: 58px;
     padding-bottom: 54px;
-    background-color: cornflowerblue;
-}
-
-.main-reasons {
-   background-color: red;  
+    background-color: aliceblue;
 }
 
 .reason-one{
@@ -81,7 +98,7 @@ fieldset{
     margin-left: 72px;
     padding-top: 54px;
     padding-bottom: 54px;
-    background-color: green;
+    background-color: aliceblue;
 }
 
 /* не получается задать нужный маргин тексту, так как картинка начинает выпадать */
@@ -93,7 +110,6 @@ fieldset{
 
 .main-advices{
     padding: 0 6%;
-    background-color:chartreuse;
 }
 
 .advice-item{
@@ -103,7 +119,7 @@ fieldset{
     text-align: center;
     padding-top: 52px;
     padding-bottom: 80px;
-    background-color: blue; 
+    background-color: aliceblue;
     
 }
 
@@ -123,13 +139,11 @@ fieldset{
     width: 310px;
     margin-right: 72px;
     padding-top: 55px;
-    padding-bottom: 54px;
-    background-color: green; 
+    padding-bottom: 54px; 
 }
 
 .group{
     padding: 0 6%;
-    background-color: white; 
 }
 
 .reason-item{
@@ -139,7 +153,7 @@ fieldset{
     text-align: center;
     padding-top: 46px;
     padding-bottom: 60px;
-    background-color: blue;
+    background-color: aliceblue;
 }
 
 .reason-item:last-child {
@@ -150,7 +164,7 @@ fieldset{
     width: 574px; 
     padding-top: 54px;
     margin: 0 auto;
-    background-color:darkkhaki;
+    background-color: aliceblue;
 }
 
 .form-searching-hotels{
@@ -158,25 +172,22 @@ fieldset{
     margin: 0 auto;
     padding-top: 54px;
     padding-bottom: 54px;
-    background-color: firebrick;
+    background-color: aliceblue;
 }
 
 .google-map{
     width: 1200px; 
 }
-/*стили для главной*/
-
 
 /*стили для hotels*/
 .filter-background-photo{
     width: 1200px;
     margin: 0;
-    background-color:aqua;
+    background-color: aliceblue;
 }
 
 .filters{
     margin: 0 6%;
-    background-color:fuchsia;
 }
 
 .filter-type-one{
@@ -184,6 +195,8 @@ fieldset{
     width: 190px;
     padding-top: 27px;
     padding-bottom: 27px;
+    vertical-align: top;
+    background-color: aliceblue;
     }
 
 .filter-type-two{
@@ -192,6 +205,8 @@ fieldset{
     margin-left: 50px;
     padding-top: 27px;
     padding-bottom: 27px;
+    vertical-align: top;
+    background-color: aliceblue;
 }
 
 .filter-type-three{
@@ -200,11 +215,12 @@ fieldset{
     margin-left: 215px;
     padding-top: 27px;
     padding-bottom: 27px;
+    vertical-align: top;
+    background-color: aliceblue;
 }
 
 .sorting{
-    margin: 0 6%;
-    background-color:darkgray;  
+    margin: 0 6%; 
 }
 
 .sorting-result{
@@ -212,30 +228,32 @@ fieldset{
     width: 128px;
     padding-top: 29px;
     padding-bottom: 32px;
-    background-color: firebrick;
+    vertical-align: top;
+    background-color: aliceblue;
 }
 
 .sorting-texts{
     display: inline-block;
     width: 372px;
-    margin-left: 28px;
+    margin-left: 29px;
     padding-top: 36px;
     padding-bottom: 32px;
-    background-color: firebrick;
+    vertical-align: top;
+    background-color: aliceblue;
 }
 
 .icons-up-down{
     display: inline-block;
     width: 38px;
     margin-left: 480px; 
-    padding-top: 29px; /*почему-то не реагирует на padding*/
+    padding-top: 29px; 
     padding-bottom: 32px; 
-    background-color: firebrick;
+    vertical-align: top;
+    background-color: aliceblue;
 }
 
 .hotels-list{
     margin: 0 6%;
-    background-color: aquamarine;
 }
 
 .photo-content{
@@ -263,57 +281,49 @@ fieldset{
     padding-bottom: 27px;
     background-color: aliceblue;
 }
-/*стили для hotels*/
-
-
+/*стили для footer*/
 
 .main-footer .container{
-    width: 1200px;
+    padding: 0 6%;
     padding-top: 34px;
     padding-bottom: 34px;
-    padding-right: 6%;
-    padding-left: 6%;
-    background-color: darkgrey;
-    } /* здесь почему-то контейнеру не присвоилась ширина 1200 */
+    } 
 
-.footer-hash-tag {
+.footer-hash-tag{
     float: left;
     width: 240px;
+    margin-right: 88px;
     background-color: white;
 }
 
-.footer-social {
+.footer-social{
     float: left;
     width: 400px;
-    margin-left: 88px;
     background-color: white;
 }
 
-.footer-copyright {
+.footer-copyright{
     float: right;
     width: 240px;
-    margin-left: 88px;
     background-color: white;
 }
-
-
 
 /*Стили текста*/
 
 .sorting-result, h2{
-    font-size:21px;
-    line-height:26px;
-    color:black;
-    font-weight:bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: black;
+    font-weight: bold;
     font-family: "PT Sans", "Arial", serif;
     text-transform: uppercase;
 }
 
 .lead{
-    font-size:21px;
-    line-height:26px;
-    color:black;
-    font-weight:bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: black;
+    font-weight: bold;
     font-family: "PT Sans", "Arial", serif;
     text-transform: uppercase;
 }
