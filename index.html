@@ -14,14 +14,14 @@
               <a class="index-logo">
                   <img src="img/sedona-logo.png" width="138" height="70" alt="Седона">
               </a>  
-              <ul class="main-menu">
+              <ul class="main-menu clearfix">
                   <li>
                       <a href="#">Информация</a>
                   </li>                         
                   <li>
                       <a href="#">Фото и видео</a>
                   </li>                          
-                  <li class="menu-right">
+                  <li>
                       <a href="#">Карта штата</a>
                   </li>                          
                   <li class="menu-right">
@@ -30,8 +30,7 @@
               </ul>
             </nav>
          </div>
-     </header>
-      
+     </header> 
      <main class="container">
          <section class="main-banner">
               <figure>
@@ -53,7 +52,7 @@
                 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </section>
              <figure class="photo-content-one">
-                <img src="img/the-real-city.jpg" width="800" height="256" alt="Фото">
+                <img src="img/the-real-city.jpg" width="800" height="400" alt="Фото">
              </figure>
          </div>
          <div class="main-advices clearfix">
@@ -76,7 +75,7 @@
          </div>
          <div class="main-reasons clearfix">
             <figure class="photo-content-two">
-                <img src="img/devils-bridge.jpg" width="800" height="256" alt="Фото">
+                <img src="img/devils-bridge.jpg" width="800" height="400" alt="Фото">
              </figure>
             <section class="reasons reason-two">
                 <span class="lead">Там есть мост дьявола</span>
@@ -106,46 +105,45 @@
              <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
              <a class="btn-form-searching" href="#">Поиск гостиницы в Седоне</a>
          </section> 
-         
-         <div class="form-and-map">
             <div class="form-searching-hotels">
               <form action="#" method="get">
-                  <!--
-                  <div class="date-item">
-                      <div class="event-date">Дата заезда:</div>
-                      <div class="choice-date">
-                          <div class="value-date">24 апреля 2017</div>
-                          <img class="icon-date" src="img/Calendar.png" width="21" height="22" alt="Календарь">
+                  <label>
+                      <p class="text-block">Дата заезда:</p> 
+                      <div class="field-block-item">
+                        <input class="field-block-arrive" type="text" name="date" value="" placeholder="24 апреля 2017">
                       </div>
-                  </div>
-                  -->
-                  <p>Дата заезда: <input type="date" name="calendar">
-                      <input type="submit" value="Отправить"></p>
-                  <img src="img/Calendar.png" width="21" height="22" alt="Календарь">
-                  <p>Дата выезда: <input type="date" name="calendar">
-                      <input type="submit" value="Отправить"></p>
-                  <img src="img/Calendar.png" width="21" height="22" alt="Календарь"> 
-                  <div class="counts">
+                  </label>
+                  <label>
+                      <p class="text-block">Дата выезда:</p>
+                      <div class="field-block-item">
+                        <input class="field-block-depart" type="text" name="date" value="" placeholder="4 июля 2017">
+                      </div>
+                  </label>
+                  <div class="counts-all clearfix">
                       <div class="count-adults">
-                          <img src="img/Minus.png" width="12" height="3" alt="Минус">
-                          Взрослые:
-                          <img src="img/Plus.png" width="11" height="11" alt="Плюс">
-                     </div>   
-                     <div class="count-children">
-                         <img src="img/Minus.png" width="12" height="3" alt="Минус">
-                         Дети:
-                         <img src="img/Plus.png" width="11" height="11" alt="Плюс">
+                          <p class="text-block-adults">Взрослые:</p> 
+                          <div class="counts-block-adults">
+                            <span class="counts">-</span>
+                              <span class="counts counts-number">2</span>
+                            <span class="counts">+</span>
+                          </div>
+                      </div>   
+                      <div class="count-children">
+                         <p class="text-block-children">Дети:</p> 
+                         <div class="counts-block-children">    
+                            <span class="counts">-</span>
+                             <span class="counts counts-number">0</span>
+                            <span class="counts">+</span>
+                         </div>
                       </div>
                   </div>
-                  <a class="btn-searching-hotels" href="#">Найти</a>
+                  <button class="btn-searching-hotels" type="submit">Найти</button>
                </form>
             </div>     
             <div class="main-google-map">
                 <iframe class="google-map-active" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505974255!2d-111.83015798499453!3d34.85437338103579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1485111401292" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-         </div>
       </main>    
-      
       <footer class="main-footer">
           <div class="container clearfix">
             <section class="footer-hash-tag">
