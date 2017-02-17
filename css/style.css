@@ -1,6 +1,6 @@
 html,
 body{
-    position: relative; /*чтобы центрировать футер*/ 
+    position: relative;  
     min-width: 1200px;
     margin: 0;
     padding: 0;
@@ -14,8 +14,9 @@ body{
     color: black;
    }
 
-/*Стили текста*/
 
+
+/*Стили текста*/
 h2{
     font-size: 21px;
     line-height: 26px;
@@ -34,6 +35,9 @@ h2{
     font-family: "PT Sans", "Arial", serif;
     text-transform: uppercase;
 }
+/*Стили текста*/
+
+
 
 
 .clearfix::after{
@@ -60,7 +64,6 @@ fieldset{
 .container{
     width: 1200px;
     margin: 0 auto;
-    outline: 1px solid green;
     background-color: #ffffff;
 }
 
@@ -79,10 +82,7 @@ fieldset{
     padding: 0;
     width: 138px;
     height: 70px;
-
 }
-
-
 
 .main-navigation ul{
     margin: 0;
@@ -90,7 +90,6 @@ fieldset{
     list-style: none;
     font-size: 0;
 }
-
 
 .main-navigation li{
     float: left;
@@ -110,7 +109,6 @@ fieldset{
     font-weight: bold;
 }
 
-
 .main-menu .menu-right{
     float: right;
     text-align: right;
@@ -129,13 +127,7 @@ fieldset{
 
 
 
-
-
-
-
-
 /*стили для главной*/
-
 .main-banner{
     position: relative;
     width: 1200px;
@@ -153,11 +145,6 @@ fieldset{
     margin-top: 452px;
 }
 
-
-
-
-
-
 .main-preview{
     padding: 0 6%; 
     color: #000000;
@@ -171,7 +158,6 @@ fieldset{
     padding-bottom: 37px;  
 }
 
-
 .main-preview-text .lead{
     line-height: 26px;
 }
@@ -179,15 +165,6 @@ fieldset{
 .main-preview-text p{
     margin-top: 30px;
 }
-
-
-
-
-
-
-
-
-
 
 .main-reasons{
     background-color: #81b3d2;
@@ -226,23 +203,8 @@ fieldset{
     float: right;
     width: 800px;
     height: 256px;
-    overflow: hidden; /*размер картинки больше, чем отображаемая область, поэтому прячем лишнее*/
+    overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*
-.main-advices{
-    padding: 0 6%;
-} */
 
 .main-advices{
     margin-left: 50px;
@@ -262,12 +224,10 @@ fieldset{
     margin-right: 0;
 }
 
-
 .advice-item p{
     margin-top: 22px;
     line-height: 23px;
 }
-
 
 .main-advices .advice-house::before{
     position: absolute;
@@ -302,33 +262,11 @@ fieldset{
     background-position: -264px -10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .photo-content-two{
     float: left;
     width: 800px;
     height: 256px;
-    overflow: hidden;/*размер картинки больше, чем отображаемая область, поэтому прячем лишнее*/
+    overflow: hidden;
 }
 
  .reason-two{
@@ -337,7 +275,6 @@ fieldset{
     margin-right: 46px;
     padding-top: 54px;
     padding-bottom: 38px;
-    outline: 1px solid black;
     background-color: #81b3d2;
     color: #ffffff;
 }
@@ -347,11 +284,6 @@ fieldset{
     width: 200px;
     margin: 0 auto;
 }
-
-
-
-
-
 
 .group{
     padding: 0 60px;
@@ -380,20 +312,8 @@ fieldset{
     margin-bottom: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .main-searching-hotels{
-    width: 568px; 
+    width: 570px; 
     padding-top: 54px;
     margin: 0 auto;
     text-align: center;
@@ -428,25 +348,6 @@ fieldset{
     padding-bottom: 31px;   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .form-searching-hotels{
     position: absolute;
     width: 568px; 
@@ -456,7 +357,6 @@ fieldset{
     background-color: #ffffff;
     font-weight: bold;
 }
-
 
 .form-searching-hotels label{
     display: block;
@@ -476,8 +376,7 @@ fieldset{
     color: #000000;
     font-weight: bold;
     font-family: "PT Sans", "Arial", serif;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 
 .text-block{
@@ -516,25 +415,16 @@ fieldset{
     margin-top: 7px;
 }
 
-
-
-
-
-
-
-
 .counts-all{
     margin-left: 55px;
     margin-bottom: 45px;
     margin-top: 14px;
 }
 
-
 .text-block-adults{
     float: left;
     margin-right: 43px;
 }
-
 
 .counts-block-adults{
     float: left;
@@ -543,13 +433,13 @@ fieldset{
     min-width: 80px;
     min-height: 28px;
     background-color: #f2f2f2;
-     outline: 1px solid black;
+    
+    outline: 1px solid black;
 }
 
 .text-block-children{
     float: left;
-    vertical-align: middle;
-    
+    vertical-align: middle;   
 }
 
 .counts-block-children{
@@ -559,9 +449,9 @@ fieldset{
     min-width: 114px;
     min-height: 38px;
     background-color: #f2f2f2;
+    
     outline: 1px solid black;
 }
-
 
 .counts{
     font-size: 24px;
@@ -570,7 +460,8 @@ fieldset{
     font-weight: bold;
     margin: 0 11px;
     vertical-align: middle;
- outline: 1px solid red;
+    
+    outline: 1px solid red;
 }
 
 .counts-number{
@@ -579,7 +470,6 @@ fieldset{
     color: #000000;
     font-weight: bold;
 }
-
 
 .btn-searching-hotels{
     display: block;
@@ -598,37 +488,16 @@ fieldset{
     border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-google-map{
     width: 1200px;
     height: 593px;
     background: #ffffff url("../img/map.jpg") no-repeat;
 }
-
-
-
-
-
+/*стили для главной*/
 
 
 
 /*стили для hotels*/
-
 .choice-of-hotel{
     position: relative;
     width: 1200px;
@@ -651,8 +520,7 @@ fieldset{
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
-    font-weight: normal;
-    
+    font-weight: normal;   
 }
 
 .filters .parameter{
@@ -665,25 +533,18 @@ fieldset{
     
 }
 
-
 .filters ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    outline: 1px solid blue;
+    
+outline: 1px solid blue;
 }
 
 
 .filters li{
-    
     margin-bottom: 23px;
-
 }
-
-
-
-
-
 
 .choice-of-hotel-checkbox input[type="checkbox"]{
   display: none;
@@ -692,7 +553,6 @@ fieldset{
 .choice-of-hotel-checkbox{
     position: relative;
     padding-left: 40px;
-    
     cursor: pointer;  
 }
 
@@ -719,16 +579,10 @@ fieldset{
     background-position: -94px -11px; 
 }
 
-
-
-
-
-
 .filter-type-infrastructure{
     display: inline-block;
     width: 190px;
     padding-top: 27px;
-   
     vertical-align: top;
     margin-top: 27px;
     outline: 1px solid red;
@@ -739,7 +593,6 @@ fieldset{
     width: 190px; 
     margin-left: 43px;
     padding-top: 27px;
-
     vertical-align: top;
     margin-top: 27px;
     
@@ -757,13 +610,6 @@ fieldset{
     outline: 1px solid red;
 }
 
-
-
-
-
-
-
-
 .range-title{
     margin-bottom: 10px;
 }
@@ -775,7 +621,6 @@ fieldset{
     margin-bottom: 20px;
     
     font-size: 0;
-
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
@@ -795,11 +640,9 @@ fieldset{
 
 .price-controls label {
     display: inline-block;
-
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
-
     cursor: pointer;
 }
 
@@ -886,31 +729,20 @@ fieldset{
     background: #ffffff;
 }   
 
-
-
-
-
-
-
-
 .border-bottom{
     border-bottom: 1px solid #e5e5e5;
 }
 
 .sorting{
     margin: 0 6%; 
-
 }
 
 .sorting-result{
     display: inline-block;
-    
     width: 128px;
     padding-top: 29px;
     padding-bottom: 30px;
     vertical-align: top;
-
-    
     font-size: 21px;
     color: #000000;
     font-weight: bold;
@@ -923,15 +755,12 @@ fieldset{
 
 }
 
-
 .sorting-name{
     display: inline-block;
     margin-left: 32px;
     padding-top: 35px;
     padding-bottom: 32px;
     vertical-align: top;
-
-    
     font-size: 12px;
     line-height: 18px;
 }
@@ -942,8 +771,6 @@ fieldset{
     padding-top: 35px;
     padding-bottom: 32px;
     vertical-align: top;
-
-    
     font-size: 12px;
     line-height: 18px;
 }
@@ -954,12 +781,9 @@ fieldset{
     padding-top: 35px;
     padding-bottom: 32px;
     vertical-align: top;
-
-    
     font-size: 12px;
     line-height: 18px;
 }
-
 
 .sorting-rating{
     display: inline-block;
@@ -967,12 +791,9 @@ fieldset{
     padding-top: 35px;
     padding-bottom: 32px;
     vertical-align: top;
-
-    
     font-size: 12px;
     line-height: 18px;
 }
-
 
 .sorting-texts .active{
     color: #81b3d2; 
@@ -989,11 +810,9 @@ fieldset{
     left: 0px;
     bottom: 35px;
     width: 100%;
-    
     border-bottom: 1px dotted #81b3d2;
     
 }
-
 
 .icons-up-down{
     display: inline-block;
@@ -1001,51 +820,25 @@ fieldset{
     margin-left: 487px;
     margin-top: 38px; 
     vertical-align: top;
-
 }
-
-
 
 .icon-up{
     display: inline-block;
-    vertical-align: top;
-    
-
-    background: #ffffff url("../img/spritesheet.png");
+    vertical-align: top; background: #ffffff url("../img/spritesheet.png");
     width: 11px;
     height: 10px;
-    background-position: -619px -10px;
-
-    
+    background-position: -619px -10px;   
 }
-
 
 .icon-down{
     display: inline-block;
     vertical-align: top;
-    margin-left: 6px;
-    
-    
+    margin-left: 6px; 
     background: #ffffff url("../img/spritesheet.png");
     width: 11px;
     height: 10px;
     background-position: -139px -10px;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .hotel-item{
     margin: 0 6%;
@@ -1104,11 +897,9 @@ fieldset{
     min-width: 110px;
     min-height: 27px;
     background-color: #81b3d2;
-    
     line-height: 27px;
     color: #ffffff;
     font-weight: bold;
-    
     text-align: center;
     vertical-align: middle;
 }
@@ -1119,17 +910,12 @@ fieldset{
     min-width: 142px;
     min-height: 27px;
     background-color: #766357;
-    
     line-height: 27px;
     color: #ffffff;
     font-weight: bold;
-    
     text-align: center;
     vertical-align: middle;  
 }
-
-
-
 
 .rating{
     float: right;
@@ -1137,9 +923,7 @@ fieldset{
     margin-left: 350px;
     padding-top: 30px;
     padding-bottom: 27px;
-
 }
-
 
 .rating .rating-stars{
     position: relative;
@@ -1149,12 +933,10 @@ fieldset{
     margin-bottom: 36px;
 }
 
-
 .rating ul{
     list-style: none;
     margin: 0;
     padding: 0;
-
     text-align: right;
 }
 
@@ -1166,10 +948,7 @@ fieldset{
     width: 18px;
     height: 17px;
     background-position: -443px -10px;
-
 }
-
-
 
 .rating .rating-count{
     display: block;
@@ -1184,20 +963,17 @@ fieldset{
     text-align: center;
     vertical-align: middle;
 }
-
+/*стили для hotels*/
 
 
 
 /*стили для footer*/
-
-
 .inner-footer .container{
     padding: 0 6%;
     padding-top: 34px;
     padding-bottom: 34px;
     box-sizing: border-box;
-    background-color: #ffffff;
-    
+    background-color: #ffffff;  
     }
 
 .main-footer{
@@ -1205,7 +981,6 @@ fieldset{
     left: 50%;
     transform: translate(-50%);
     bottom: 0;
-    
     }
 
 .main-footer .container{
@@ -1226,7 +1001,6 @@ fieldset{
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-
 }
 
 .footer-hash-tag a{
@@ -1238,15 +1012,12 @@ fieldset{
     float: left;
     width: 400px;
     text-align: center;
-    margin-top: 3px;
-
-    
+    margin-top: 3px;  
 }
 
 .footer-copyright{
     float: right;
     width: 240px;
-
     margin-right: 8px;
 }
 
@@ -1305,13 +1076,12 @@ fieldset{
     height: 16px;
     background-position: -579px -10px;
 }
-
+/*стили для footer*/
 
 
 
 
 /*спрайт*/
-
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
@@ -1401,4 +1171,4 @@ fieldset{
     height: 10px;
     background-position: -619px -10px;
 }
-
+/*спрайт*/
