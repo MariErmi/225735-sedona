@@ -1185,8 +1185,12 @@ fieldset{
     height: 39px;
 }
 
-.html-academy-logo img:active{
-    opacity: 0.3;
+.html-academy-logo:active {
+    content: url("../img/html-academy-logo-gray.png");
+}
+
+.html-academy-logo:hover {
+    content: url("../img/html-academy-logo-blue.png");
 }
 
 .footer-copyright .text-footer-copyright{
