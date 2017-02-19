@@ -116,6 +116,18 @@ fieldset{
     font-weight: bold;
 }
 
+.main-navigation a:hover{
+    color: #81b3d2;
+}
+
+.main-navigation a:active{
+    color: #cacaca;
+}
+
+.active a{
+    color: #766357;
+}
+
 .main-menu .menu-right{
     float: right;
     text-align: right;
@@ -131,8 +143,6 @@ fieldset{
     margin-left: 148px;
     text-align: right;
 }
-
-
 
 /*стили для главной*/
 .main-banner{
@@ -377,7 +387,7 @@ fieldset{
 }
 
 .form-searching-hotels input[type="text"]{
-    min-width: 302px;
+    min-width: 346px;
     min-height: 35px;
     background-color: #f2f2f2;
     border: none;
@@ -388,7 +398,8 @@ fieldset{
     color: #000000;
     font-weight: bold;
     font-family: "PT Sans", "Arial", serif;
-    text-transform: uppercase;  
+    text-transform: uppercase; 
+    box-sizing: border-box;
 }
 
 .form-searching-hotels input:hover{
@@ -646,7 +657,6 @@ fieldset{
 
     border: 2px solid #ffffff;
     border-radius: 4px;
-    opacity: 0.7;
 }
 
 .choice-of-hotel-checkbox input[type="checkbox"]:checked + .checkbox-indicator{
@@ -1185,13 +1195,15 @@ fieldset{
     height: 39px;
 }
 
-.html-academy-logo:active {
+.html-academy-logo:hover img{
+    content: url("../img/html-academy-logo-blue.png");
+}
+
+
+.html-academy-logo:active img{
     content: url("../img/html-academy-logo-gray.png");
 }
 
-.html-academy-logo:hover {
-    content: url("../img/html-academy-logo-blue.png");
-}
 
 .footer-copyright .text-footer-copyright{
     display: inline-block; 
