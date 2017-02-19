@@ -638,7 +638,7 @@ fieldset{
     cursor: pointer;  
 }
 
-.input-disabled + .checkbox-indicator{
+.input + .checkbox-indicator{
     position: absolute;
     left: 0;
     width: 17px;
@@ -647,7 +647,7 @@ fieldset{
     border-radius: 4px;
 }
 
-.input-disabled:checked + .checkbox-indicator{
+.input:checked + .checkbox-indicator{
     position: absolute;
     border: none;
     width: 26px;
@@ -656,11 +656,11 @@ fieldset{
     background-position: -176px -11px;
 }
 
-.input-disabled:disabled + .checkbox-indicator{
+.input:disabled + .checkbox-indicator{
     border-color: #6a6a6a;
 }
 
-.input-disabled:checked:disabled + .checkbox-indicator{
+.input:checked:disabled + .checkbox-indicator{
     background-position: -221px -10px;
 }
 
