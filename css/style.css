@@ -668,7 +668,7 @@ fieldset{
 
     
     background: url("../img/spritesheet.png") no-repeat;
-    background-position: -175px -10px;
+    background-position: -176px -11px;
 }
 
 .filters input[type="checkbox"] + .checkbox-indicator:disabled{
