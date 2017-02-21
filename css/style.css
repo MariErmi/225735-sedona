@@ -12,16 +12,6 @@ body{
     text-transform: uppercase;
     background-color: #f2f2f2;
     color: black;
-   }
-
-/*Стили текста*/
-h2{
-    font-size: 21px;
-    line-height: 26px;
-    color: #000000;
-    font-weight: bold;
-    font-family: "PT Sans", "Arial", serif;
-    text-transform: uppercase;
 }
 
 .lead{
@@ -33,27 +23,17 @@ h2{
     font-family: "PT Sans", "Arial", serif;
     text-transform: uppercase;
 }
-/*Стили текста*/
 
 .clearfix::after{
     content: "";
-    
     display: table;
     clear: both;
-}
-
-figure{
-    margin: 0;
 }
 
 img{
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-fieldset{
-    margin: 0;   
 }
 
 .container{
@@ -133,7 +113,6 @@ fieldset{
     margin-left: 30px;
 }
 
-
 .main-menu .menu-right-position{
     margin-left: 148px;
     text-align: right;
@@ -141,46 +120,46 @@ fieldset{
 
 /*стили для главной*/
 .main-banner{
-    position: relative;
-    width: 1200px;
-    height: 509px;
+	position: relative;
+	width: 1200px;
+	min-height: 509px; 
+    background: #81b3d2 url("../img/background-photo-sedona.jpg") no-repeat;
 }
 
 .main-banner .main-banner-inscription{
-    position: absolute;
-    margin-top: 76px;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 0 auto;
+    padding-top: 76px;
 }
 
-.main-banner .main-banner-mask{
+.main-banner::before{
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 452px;
+    content: "";    
+    background-image: url("../img/mask-1.png");
+    bottom: 0;
+    width: 1200px;
     height: 57px;
-    width: 100%;
 }
 
 .main-preview{
-    padding: 0 6%; 
+	width: 494px; 
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-bottom: 38px; 
     color: #000000;
     text-align: center;
 }
 
-.main-preview-text{
-    width: 494px; 
-    margin: 0 auto;
-    padding-top: 57px;
-    padding-bottom: 37px;  
-}
-
-.main-preview-text .lead{
+.main-preview .lead{
     line-height: 26px;
 }
 
-.main-preview-text p{
+.main-preview h2{
     margin-top: 30px;
+	font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    font-family: "PT Sans", "Arial", serif;
+    text-transform: uppercase;
 }
 
 .main-reasons{
@@ -341,8 +320,7 @@ fieldset{
     font-size: 30px;
     line-height: 24px;
     color: #000000;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 
 .main-searching-hotels p{
@@ -380,7 +358,7 @@ fieldset{
     margin-bottom: 15px;
 }
 
-.form-searching-hotels input[type="text"]{
+.field-block-item input[type="text"]{
     min-width: 346px;
     min-height: 38px;
     background-color: #f2f2f2;
@@ -396,39 +374,38 @@ fieldset{
     box-sizing: border-box;
 }
 
-.form-searching-hotels input:hover{
+.field-block-item input:hover{
     background-color: #ebebeb;
 }
 
-.form-searching-hotels input:focus{
+.field-block-item input:focus{
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    outline: none;
-    
+    outline: none;   
 }
 
 .form-searching-hotels .field-block-arrive::-webkit-input-placeholder{
-    color:#000000;
+    color: #000000;
 }
 
 .form-searching-hotels .field-block-arrive::-moz-placeholder{
-    color:#000000;
+    color: #000000;
 }
 
 .form-searching-hotels .field-block-arrive:-moz-placeholder{
-    color:#000000;
+    color: #000000;
 }
 
 .form-searching-hotels .field-block-arrive:-ms-input-placeholder{
-    color:#000000;
+    color: #000000;
 }
 
 .form-searching-hotels .field-block-depart::-webkit-input-placeholder{
-    color:#000000;
+    color: #000000;
 }
 
 .form-searching-hotels .field-block-depart::-moz-placeholder{
-    color:#000000;
+    color: #000000;
 }
 
 .form-searching-hotels .field-block-depart:-moz-placeholder{
@@ -460,8 +437,8 @@ fieldset{
     position: relative;
 }
 
-.field-block-item::before{
-   position: absolute;
+.calendar::before{
+    position: absolute;
     content: "";    
     background: #f2f2f2 url("../img/spritesheet.png") no-repeat;
     top: 15px;
@@ -471,11 +448,11 @@ fieldset{
     background-position: -10px -10px; 
 }
 
-.field-block-item:hover::before{
+.calendar:hover::before{
     background-position: -51px -10px;
 }
 
-.field-block-item:active::before{
+.calendar:active::before{
     background-position: -92px -10px;
 }
 
@@ -494,27 +471,28 @@ fieldset{
 
 .text-block-adults{
     float: left;
-    margin-right: 43px;
+    margin-right: 42px;
 }
 
 .counts-block-adults{
     float: left;
-    margin-right: 55px;
-    margin-top: 8px;
-    min-width: 80px;
-    min-height: 28px;
+    margin-right: 53px;
+    margin-top: 7px;
+    min-width: 114px;
+    min-height: 38px;
     background-color: #f2f2f2;
+
 }
 
 .text-block-children{
     float: left;
-    vertical-align: middle;   
+    vertical-align: middle;	
 }
 
 .counts-block-children{
     float: right;
     margin-right: 55px;
-    margin-top: 8px;
+    margin-top: 7px;
     min-width: 114px;
     min-height: 38px;
     background-color: #f2f2f2;
@@ -522,11 +500,12 @@ fieldset{
 
 .counts{
     font-size: 24px;
-    line-height: 36px;
+    line-height: 34px;
     color: #a9a9a9;
     font-weight: bold;
     margin: 0 11px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .counts:hover{
@@ -538,10 +517,35 @@ fieldset{
 }
 
 .counts-number{
+	width: 10px;
+    min-height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+    padding-left: px;
+    padding-right: px;    
     font-size: 14px;
     line-height: 24px;
     color: #000000;
     font-weight: bold;
+    font-family: "PT Sans", "Arial", serif;
+    text-transform: uppercase; 
+    box-sizing: border-box;
+}
+
+.counts-number::-webkit-input-placeholder{
+    color: #000000;
+}
+
+.counts-number::-moz-placeholder{
+    color: #000000;
+}
+
+.counts-number:-moz-placeholder{
+    color: #000000;
+}
+
+.counts-number:-ms-input-placeholder{
+    color: #000000;
 }
 
 .btn-searching-hotels{
@@ -576,20 +580,12 @@ fieldset{
     height: 593px;
     background: #ffffff url("../img/map.jpg") no-repeat;
 }
-/*стили для главной*/
 
 /*стили для hotels*/
 .choice-of-hotel{
     position: relative;
-    width: 1200px;
-    min-height: 218px;
-}
-
-.choice-of-hotel::before{
-    position: absolute;
-    content: "";
-    width: 1200px;
-    height: 217px;
+	width: 1200px;
+	min-height: 217px; 
     background: #81b3d2 url("../img/filter-background-photo.jpg") no-repeat;
 }
 
@@ -600,7 +596,7 @@ fieldset{
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
-    font-weight: normal;   
+    font-weight: normal;
 }
 
 .parameter{
@@ -621,7 +617,7 @@ fieldset{
 }
 
 .filters li{
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 
 .filters li:last-child{
@@ -669,12 +665,14 @@ fieldset{
     width: 190px;
     padding-top: 27px;
     vertical-align: top;
+	margin: 0;
     margin-top: 27px;
 }
 
 .filter-type-housing{
     display: inline-block;
-    width: 190px; 
+    width: 190px;
+	margin: 0;
     margin-left: 62px;
     padding-top: 27px;
     vertical-align: top;
@@ -695,7 +693,7 @@ fieldset{
 }
 
 .range-title{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .price-controls{
@@ -721,7 +719,7 @@ fieldset{
 .price-controls label{
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 30px;
     vertical-align: top;
     cursor: pointer;
 }
@@ -739,6 +737,43 @@ fieldset{
     font: inherit;
     background: none;
     border: none;
+    line-height: 18px;
+}
+
+.price-controls input:focus{
+    outline: none;   
+}
+
+.min-price input::-webkit-input-placeholder{
+    color: #ffffff;
+}
+
+.min-price input::-moz-placeholder{
+    color: #ffffff;
+}
+
+.min-price input:-moz-placeholder{
+    color: #ffffff;
+}
+
+.min-price input:-ms-input-placeholder{
+    color: #ffffff;
+}
+
+.max-price input::-webkit-input-placeholder{
+    color:#ffffff;
+}
+
+.max-price input::-moz-placeholder{
+    color:#ffffff;
+}
+
+.max-price input:-moz-placeholder{
+    color:#ffffff;
+}
+
+.max-price input:-ms-input-placeholder{
+    color:#ffffff;
 }
 
 .range-controls{
@@ -762,7 +797,6 @@ fieldset{
     top: -9px;
     width: 4px;
     height: 4px;
-
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
@@ -801,7 +835,7 @@ fieldset{
     background: #ffffff;
 }   
 
-.border-bottom{
+.wrapper{
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -812,7 +846,7 @@ fieldset{
 .sorting-result{
     display: inline-block;
     width: 128px;
-    padding-top: 29px;
+    padding-top: 32px;
     padding-bottom: 30px;
     vertical-align: top;
     font-size: 21px;
@@ -824,7 +858,6 @@ fieldset{
     width: 400px;
     display: inline-block;
     vertical-align: top;
-
 }
 
 .sorting-name{
@@ -871,11 +904,11 @@ fieldset{
     text-decoration: none;
 }
 
-.sorting-name-condition a:hover{
+.sorting-settings a:hover{
     color: #81b3d2;
 }
 
-.sorting-name-condition a:active{
+.sorting-settings a:active{
     color: #000000;
     border-bottom: none;
 }
@@ -891,8 +924,7 @@ fieldset{
     left: 0px;
     bottom: 35px;
     width: 100%;
-    border-bottom: 1px dotted #81b3d2;
-    
+    border-bottom: 1px dotted #81b3d2; 
 }
 
 .sorting-texts .link:active::after{
@@ -950,7 +982,7 @@ fieldset{
     float: left;
     width: 300px;
     margin-left: 30px;
-    padding-top: 6px;
+    padding-top: 7px;
     padding-bottom: 30px;
 }
 
@@ -961,6 +993,12 @@ fieldset{
 
 .hotel-title{
     margin-bottom: 8px;
+	font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", serif;
+    text-transform: uppercase;
 }
 
 .hotel-title a:hover{
@@ -1080,14 +1118,17 @@ fieldset{
     text-align: center;
     vertical-align: middle;
 }
-/*стили для hotels*/
 
 /*стили для footer*/
+.main-content{
+    position: relative;
+}
+
 .main-footer{
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    left: 0;
     bottom: 0;
+    width: 100%;
 }
 
 .main-footer .container{
@@ -1099,11 +1140,10 @@ fieldset{
     opacity: 0.9;
 } 
 
-
 .inner-footer{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .inner-footer .container{
@@ -1227,10 +1267,8 @@ fieldset{
 .footer-social .social-btn-youtube:active::before{
     background-position: -1070px -45px;
 }
-/*стили для footer*/
 
 /*спрайт*/
-
 .sprite{
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
