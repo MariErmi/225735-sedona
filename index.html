@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Седона</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-		<link href="css/normalize.css" type="text/css" rel="stylesheet">
+		<link href="css/min-normalize.css" type="text/css" rel="stylesheet">
 		<link href="css/min-style.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
@@ -99,32 +99,36 @@
 				<div class="form-searching-hotels">
 					<form action="#" method="get">
 						<label>
-							<span class="text-block">Дата заезда:</span> 
-							<div class="field-block-item">
-								<input class="field-block-arrive" type="text" name="date" value="" placeholder="24 апреля 2017">
-								<div class="calendar"></div>
-							</div>
+						<span class="text-block">Дата заезда:</span> 
+						<span class="field-block-item">
+						<input class="field-block-arrive" type="text" name="date" value="" placeholder="24 апреля 2017">
+						<span class="calendar"></span>
+						</span>
 						</label>
 						<label>
-							<span class="text-block">Дата выезда:</span>
-							<div class="field-block-item">
-								<input class="field-block-depart" type="text" name="date" value="" placeholder="4 июля 2017">
-								<div class="calendar"></div>
-							</div>
+						<span class="text-block">Дата выезда:</span>
+						<span class="field-block-item">
+						<input class="field-block-depart" type="text" name="date" value="" placeholder="4 июля 2017">
+						<span class="calendar"></span>
+						</span>
 						</label>
-						<div class="counts-all clearfix">
-							<p class="text-block-adults">Взрослые:</p>
-							<div class="counts-block-adults">
-								<span class="counts counts-minus">&#8211;</span>
-								<input class="counts counts-number" type="text" placeholder="2">
-								<span class="counts counts-plus">+</span>
-							</div>
-							<p class="text-block-children">Дети:</p>
-							<div class="counts-block-children">    
-								<span class="counts counts-minus">&#8211;</span>
-								<input class="counts counts-number" type="text" placeholder="0">
-								<span class="counts counts-plus">+</span>
-							</div>
+						<div class="counts-all">
+							<label class="clearfix">
+							<span class="text-block-adults">Взрослые:</span>
+							<span class="counts-block-adults">
+							<span class="counts counts-minus">&#8211;</span>
+							<input class="counts counts-number" type="text" placeholder="2">
+							<span class="counts counts-plus">+</span>
+							</span>
+							</label>
+							<label class="clearfix">
+							<span class="text-block-children">Дети:</span>
+							<span class="counts-block-children">    
+							<span class="counts counts-minus">&#8211;</span>
+							<input class="counts counts-number" type="text" placeholder="0">
+							<span class="counts counts-plus">+</span>
+							</span>
+							</label>
 						</div>
 						<button class="btn-searching-hotels" type="submit">Найти</button>
 					</form>
@@ -146,9 +150,8 @@
 							<div class="text-footer-copyright">
 								Website by
 							</div>
-							<div class="html-academy-logo">
-								<a class="" href="https://htmlacademy.ru/"><img src="img/html-academy-logo.png" width="113" height="39" alt="HTML Academy"></a>
-							</div>
+							<a class="html-academy-logo" href="https://htmlacademy.ru/">
+							</a>
 						</section>
 					</div>
 				</footer>
