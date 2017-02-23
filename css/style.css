@@ -383,8 +383,8 @@ img{
 
 .field-block-item input:focus{
     background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-    outline: none;   
+    outline: 2px solid #e5e5e5;
+
 }
 
 .form-searching-hotels .field-block-arrive::-webkit-input-placeholder{
@@ -581,6 +581,7 @@ img{
     background-color: #5496bd;
     color: #88b6d1;
     outline: none;
+    padding: 16px 0;
 }
 
 .main-google-map{
